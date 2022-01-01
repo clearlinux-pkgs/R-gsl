@@ -4,7 +4,7 @@
 #
 Name     : R-gsl
 Version  : 2.1.7.1
-Release  : 3
+Release  : 4
 URL      : https://cran.r-project.org/src/contrib/gsl_2.1-7.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gsl_2.1-7.1.tar.gz
 Summary  : Wrapper for the Gnu Scientific Library
@@ -35,10 +35,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635955528
+export SOURCE_DATE_EPOCH=1641030509
 
 %install
-export SOURCE_DATE_EPOCH=1635955528
+export SOURCE_DATE_EPOCH=1641030509
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -110,3 +110,5 @@ R CMD check --no-manual --no-examples --no-codoc gsl || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/gsl/libs/gsl.so
+/usr/lib64/R/library/gsl/libs/gsl.so.avx2
+/usr/lib64/R/library/gsl/libs/gsl.so.avx512
