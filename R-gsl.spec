@@ -4,7 +4,7 @@
 #
 Name     : R-gsl
 Version  : 2.1.7.1
-Release  : 5
+Release  : 6
 URL      : https://cran.r-project.org/src/contrib/gsl_2.1-7.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gsl_2.1-7.1.tar.gz
 Summary  : Wrapper for the Gnu Scientific Library
